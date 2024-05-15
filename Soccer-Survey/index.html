@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Reservation Form</title>
+    <link rel = "stylesheet" href="styles.css">
+    </head>
+    <body>
+      <h1 id = "title">Try-Out Form</h1>
+      <p id = "description">Fill this out to secure your spot at try-outs</p>
+      <form id = "survey-form">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label id = "name-label">Name<input required id ="name" name = "name" type = "text" placeholder = "Enter your name"></label>
+        <label id = "email-label">Email<input required id= "email" type = "email" name = "email" placeholder = "Enter your email"></label>
+        <label id = "number-label">Age<input required id = "number" name = "age" type = "number" min = "17" max = "25" placeholder = "Enter your age"></label>
+      </fieldset>
+      <fieldset>
+        <legend>Soccer Information</legend>
+      <label>What position do you play?
+        <select id = "dropdown">
+          <option value = "">(select one)</option>
+          <option value = "1">Forward</option>
+          <option value = "2">Midfield</option>
+          <option value = "3">Defense</option>
+          <option value = "4">Goalkeeper</option>
+          </select>
+      </label>
+      <label>Did you play in highschool?
+      <label><input value = "1" id="highschool" type="radio" name="highschool-type" class="inline" checked />yes</label>
+        <label><input value = "2" id="no-highschool" type="radio" name="highschool-type" class="inline" />no</label>
+        </fieldset>
+        <fieldset>
+          <legend>Personal Commitment</legend>
+        <label>Describe your current workload<textarea id="workload" name="workload" rows="3" cols="30" placeholder="I am taking 18 hours this semester.."></textarea></label></label>
+        
+          <label class = "check">I understand joining the team is a huge time commitment<input value = "1" class = "inline"
+        type = "checkbox"></label>
+        <label class = "check">If I make the team I will be required to show up to all practices and games<input value = "2" class = "inline"
+        type = "checkbox">
+        <label class = "check">I understand that time managment is my responsibility<input value = "3" class = "inline"
+        type = "checkbox"></label>
+
+
+      
+        
+        
+        <label>I have a current, updated physical<input value = "4" class = "inline" type = "checkbox"></label>
+        
+        </fieldset>
+        <input id = "submit" type="submit" value="Submit" />
+        
+      </form>
+      
+    </body>
+</html>
